@@ -1,0 +1,368 @@
+.page {
+  min-width: 1100px;
+  max-width: 1600px;
+  /* выше установили ограничение по максимальной ширине */
+  margin: 0 auto;
+  /* выше для экранов больше 1600px отцентрировали весь контент */
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  }
+  
+  .header {
+  height: 100vh;
+  min-height: 600px;
+  max-height: 756px;
+  display: flex;
+  background-color: #f2f2f2;
+  position: relative;
+  overflow: hidden;
+  align-items: center;
+  }
+
+
+  .logo_place_header {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+  }
+
+  .header__title {
+  display: flex;
+  position: absolute; 
+  width: 730px;
+  left: 64px;  
+  font-weight: bold;
+  font-size: 102px;
+  line-height: 96px;
+  margin: 0;
+  }
+
+  .header__subtitle {
+  width: 388px;
+  left: 64px;
+  bottom: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  z-index: 2;
+  line-height: 25px;
+  position: absolute;
+  margin: 0;
+  }
+
+  .header__link{
+  text-decoration: none;   
+  color: #2f80ed;
+  }
+
+  .header__main-illustration {
+  width: 765px; 
+  height: 608px; 
+  position: absolute; 
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+  }
+  
+
+  .header__square-pic {
+  height: 568px;
+  width:  568px;
+  background-color: #2f80ed;
+  position: absolute;
+  top: 64px;
+  right: 0;
+} 
+
+.two-columns {
+  display: flex;   
+  justify-content: space-between;
+  width:80%;
+  margin: 100px auto; 
+}
+
+.two-columns__brief {
+  width: 175px;
+  font-size: 18px;
+  line-height: 1.2;
+  font-weight: normal;
+  color: #2f80ed;
+}
+
+.two-columns__main-text {
+  width: 80%;
+  min-width: 784px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.two-columns__paragraph {
+  font-size: 24px;
+  line-height: 34px;
+  font-weight: normal;
+}
+
+.two-columns__span-accent {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 34px;
+ 
+}
+
+.digits {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-title {
+  width: 60%;
+  font-size: 60px;
+  font-weight: bold;
+  text-align: center;
+  line-height: 69px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ 
+.section-subtitle {
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin: 0 auto;
+  margin-top: 20px;
+
+}
+
+.table{
+  width: 1100px;
+  margin: 0 auto 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.table__cell{
+  width: 250px;
+  margin-top: 60px;
+}
+
+.table__heading{
+ line-height: 1.15;
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.table__text {
+ line-height: 1.2; 
+ font-size: 18px;
+ font-weight: normal;
+}   
+
+.feynman{
+ padding-top: 100px;
+ margin-top: 0;
+ margin-bottom: 0;
+ display: flex;
+ background-color: #f2f2f2;
+ flex-direction: column;
+ position: relative;
+ height: 790px;
+ background-image: url("../images/feynman.png");
+ background-repeat: no-repeat;
+ background-size: 867px 637px;
+ background-position: bottom left;
+}
+
+.feynman__title{
+ line-height: 1.15;
+ font-size: 120px;
+ font-weight: bold;
+ width: 648px;
+ margin: 0 auto;
+ text-align: center;
+ z-index: 1;
+}
+
+.feynman__subtitle{
+ margin: 70px auto 0;
+ line-height: 51px;
+ font-size: 36px;
+ font-weight: normal;
+ z-index: 2;
+}
+
+.feynman__link{
+ right: 48px;
+ top: 50%;
+ line-height: 51px;
+ font-size: 36px;
+ font-weight: normal;
+ color: black;
+ text-decoration: none;
+ position: absolute;
+ z-index: 3;
+}
+
+.kaufman{
+ min-height: 790px;
+ background-color:  #1f1f1f;
+ display: flex;
+ overflow: hidden;
+ position: relative;
+ justify-content: center;
+ flex-direction: column;
+}
+
+.section-title_theme_dark{
+ margin: 90px auto 0; 
+ color: #ffffff; 
+ font-size: 60px;
+ line-height: 69px;
+ font-weight: bold;
+}
+
+.section-subtitle_theme_dark{
+ margin: 20px auto 0; 
+ color: #ffffff;
+ line-height: 34px;
+ font-size: 24px;
+ font-weight: normal;
+}
+
+.table_theme_dark{
+ margin-left: auto;
+ margin-right: auto;
+ margin-bottom: 90px;
+ flex-wrap: wrap;
+ display: flex;
+ color: #ffffff;
+ width: 1100px;
+ justify-content: space-between;
+}
+
+.table__cell_theme_dark{
+  width: 200px;
+  margin-top: 80px;
+  z-index: 1;
+}
+
+.table__heading_theme_dark{
+ line-height: 1.15;
+ font-size: 24px;
+ font-weight: bold;
+}
+
+.table__text_theme_dark{
+ line-height: 1.2;
+ font-size: 18px;
+ font-weight: normal;
+ margin-top: 20px;
+}
+
+.kaufman__triangle {
+  background-image: url("../images/kaufman-triangle.svg");
+  width: 877px;
+  height: 877px;
+  position: absolute;
+  right: -210px;
+  top: 0;
+  background-size: cover;
+}
+
+.footer {
+  position: relative;
+  min-height: 350px;
+  background-color:#1f1f1f;
+  display:flex;
+  justify-content: center;
+}
+
+.footer__columns{
+  width:90%;
+  margin-top:60px;
+  margin-bottom:40px;
+  display:flex;
+  justify-content: space-between;
+  flex-direction: row;
+ }
+
+ .footer__column{
+  display:flex;
+  flex-direction:column;
+  }
+
+  
+.footer__column_content_copyright {
+  flex-basis:711px;
+  justify-content:space-between;
+  position: relative;
+  
+  }
+
+.logo_place_footer {
+  background-image: url(../images/logo_place_footer.svg);
+  background-size:cover;
+  margin-left:0;
+  width:183px;
+  margin-top:0;
+  height: 35px;
+  
+}
+
+.footer__author {
+  bottom: 18px;
+  padding-top:18px;
+  font-size: 18px;
+  line-height: 25px;
+  color:white;
+  margin:0;/*нулевой отступ*/
+}
+
+.footer__column_content_info {
+   margin-left:0;
+  }
+
+
+.footer__column-heading {
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  margin:0;
+  color:white;
+}
+
+.footer__column-links {
+    font-size: 18px;
+    line-height: 30px;
+    margin-top:20px;
+    margin-bottom:16px;
+    list-style-type: none;
+    padding-left:0px;
+    }
+
+.footer__column-links-items {
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: normal;
+  }
+
+.link-opacity:hover{
+  opacity: 0.5;
+  transition: opacity 0.5s linear 0.3s;
+  
+}
+
+.footer__links {
+  text-decoration: none;
+  color: white;
+}
+
+.footer__column_content_social{
+  color:white;
+}
+
+.footer__social-icons {
+  width: 16px;
+  height: 16px;
+}
