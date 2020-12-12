@@ -66,6 +66,11 @@ right: 0px;
 z-index: 2;
 }
 
+.header__link {
+text-decoration: none;
+color: #2f80ed;
+}
+
 .header__square-pic {
   width: 568px;
   height: 568px;
@@ -350,6 +355,11 @@ margin-top: 18px;
 margin-bottom: 18px;
 }
 
+.footer__column_content_info {
+text-decoration: none;
+color: white;
+}
+
 .column-heading {
 margin: 0;
 line-height: 30px;
@@ -368,6 +378,11 @@ margin-bottom: 16px;
 }
 
 .footer__column-link {
+color: white;
+text-decoration: none;
+}
+
+.footer__column_content_social {
 text-decoration: none;
 color: white;
 }
@@ -376,5 +391,5 @@ color: white;
 width: 16px;
 height: 16px;
 padding-right: 10px;
-text-decoration: none;
 }
+
