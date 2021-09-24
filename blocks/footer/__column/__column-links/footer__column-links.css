@@ -1,0 +1,17 @@
+.footer__column-links {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.footer__column-links a {
+  line-height: 18px;
+  font-size: 18px;
+  font-weight: 400;
+  text-decoration: none;
+  color: #fff;
+  margin-bottom: 16px;
+}
+.footer__column-links:last-child {
+  margin-bottom: 16px;
+}

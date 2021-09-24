@@ -1,0 +1,14 @@
+.cards__image img {
+  height: 160px;
+  width: 160px;
+  border-radius: 50%;
+  box-sizing: border-box;
+
+}
+.cards__image {
+  display: inline-block;
+  box-sizing: border-box;
+  margin-left: 40px;
+  margin-right: 40px;
+  margin-top: 60px;
+}
