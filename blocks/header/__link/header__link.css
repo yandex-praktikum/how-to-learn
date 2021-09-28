@@ -1,7 +1,13 @@
-.header__link a {
+.header__link {
   position: absolute;
-  bottom: 33px;
+  bottom: 50px;
   left: 333px;
   text-decoration: none;
   color: #2f80ed;
+  z-index: 2;
 }
+
+.header__link:hover {
+  opacity: 0.7;
+}
+

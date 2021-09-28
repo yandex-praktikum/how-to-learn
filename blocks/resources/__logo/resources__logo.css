@@ -1,8 +1,8 @@
 .resources__logo {
   width: 270px;
   height: 38px;
-}
-.resources__logo img {
   display: block;
   margin: 0 auto;
+  box-sizing: border-box;
 }
+

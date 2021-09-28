@@ -3,4 +3,6 @@
   padding-bottom: 40px;
   min-height: 350px;
   background-color: #1f1f1f;
+  display: flex;
+  box-sizing: border-box;
 }

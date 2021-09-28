@@ -1,11 +1,11 @@
-.animation {
-  animation-name: myanimation;
+.rotation {
+  animation-name: rotation;
   animation-duration: 20s;
   animation-timing-function:linear;
   animation-iteration-count:infinite;
 }
 
-@keyframes myanimation {
+@keyframes rotation {
   from {
     transform: rotate(0deg);
   }

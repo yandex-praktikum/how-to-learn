@@ -1,8 +1,5 @@
-.footer__social-icon a {
-
+.footer__social-icon {
   color: white;
   text-decoration: none;
 }
-.footer__social-icon {
-  margin-bottom: 5px;
-}
+
