@@ -1,7 +1,4 @@
 .header__link {
-  position: absolute;
-  bottom: 50px;
-  left: 333px;
   text-decoration: none;
   color: #2f80ed;
   z-index: 2;
