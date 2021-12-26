@@ -1,3 +1,14 @@
+
+body, h1,h2, h3, h4, p, a{ 
+  font-size: 100%;
+}
+div,h4, section {
+  border: 1px solid red;
+}
+* {
+  margin:0;
+  padding:0;
+  }
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -9,23 +20,382 @@
   font-family: 'Helvetica Neue', Arial, sans-serif;
 }
 
-.header {
+.header{
+  position: relative;
+  display: flex;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  /* выше установили ограничения для секции */
+  background-color: #f2f2f2;
+  overflow: hidden;
 }
 
-/* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
-.header__square-pic {
+.logo_place_header{
+  position: absolute;
+  width: 183px;
+  height: 32px;
+  margin-top: 30px;
+  margin-left: 64px;
+  z-index: 2;
+}
+.header_title{
+  align-self: center;
+  z-index: 2;
+  margin-left: 64px;
+  width: 730px; 
+}
+.header_subtitle{
+  position: absolute;
+  bottom: 30px;
+  margin-left: 64px;
+  width:388px;
+  z-index: 2;
+}
+.header_main-illustration{
+  position: absolute;
+  width: 765px;
+  height: 608px;
+  bottom: 0;
+  right: 0;
+  z-index: 1;
+}
+.header_square-pic{
+  position: absolute;
   height: 568px;
   width: 568px;
+  background-color: #2f80ed;
+  top: 64px;
+  right: 0; 
 }
 
-/* и элемента с модификатором вида ключ-значение */
-.table__cell_theme_dark {
+
+/* Стили текстов "Научиться учиться и Эффективные подходы к обучению*/
+.header_title_text {
+  line-height: 96px;
+  font-size: 102px;
+  font-weight: bold;
+  margin:0; 
+}
+.header_subtitle_text{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  height: auto;
+  
+}
+.colortext {
+  color: #2f80ed;
+}
+.header_link{
+  text-decoration: none;
+}
+/*__________________________________________________________________*/
+
+/* Раздел сайта Главные проблемы обучения */
+.description{
+  margin: 100px 0;
+}
+
+.two-columns{
+  display: flex;
+  margin: auto;
+  min-width: 784px;
+  width: 80%;
+  justify-content:space-between;
+}
+
+.empty_block{
+  position: relative;
+  min-width: 5%;
+  width: 100px;
+  height: auto;
+}
+.text_1{
+  height: 30px;
+}
+.two-columns_main-text{
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Стили текстов "Главные проблемы и 3 параграфа*/
+.two-columns_brief{
+  width: 175px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+  color:  #2f80ed;
+
+}
+.two-columns_paragraph{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  margin-bottom: 30px;
+}
+.two-columns_paragraph:last-child{ margin-bottom: 0;}
+.two-columns_span-accent{
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: bold;
+}
+/*__________________________________________________________________*/
+
+/* Раздел сайта Цифры и факты */
+.section-title{
+  display: flex;
+  width: 60%;
+  margin: auto;
+}
+.section-subtitle{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+.table{
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  width: 1100px;
+  height: auto;
+  justify-content: space-between;
+}
+.table_cell{
+  margin-top: 60px;
+  width: 250px;
+  height: auto;
+}
+.bank{
+  margin-top: 20px;
+}
+/* Стили текстов блок "digits"*/
+.digits{
+  margin-bottom: 100px;
+}
+.section-title_text{
+  margin: auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+}
+.section-subtitle_text{
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+}
+.table_heading, .table_heading_theme_dark{
+  line-height: 1.15;
+  font-size: 24px;
+  font-weight: bold;
+}
+.table_text, .table_text_theme_dark{
+  margin-top: 20px;
+  line-height: 1.2;
+  font-size: 18px;
+  font-weight: normal;
+}
+/*__________________________________________________________________*/
+
+/* Раздел сайта Метод Хеймана */
+
+.feynman{
+  height: 890px;
+  background-color:#f2f2f2;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.feynman_img{
+  width: 867px;
+  height: 637px;
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  bottom: 0;
+  
+}
+.feynman_title{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 100px;
+  width: 648px;
+  z-index: 1;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold;
+  text-align: center;
+}
+.feynman_subtitle{
+  display:block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+  z-index: 1; 
+}
+.feynman_link{
+  position: absolute;
+  top: 50%;
+  right: 48px; 
+  z-index: 1; 
+}
+.link_text{
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal;
+}
+/*__________________________________________________________________*/
+
+/* Раздел сайта  kaufman */
+
+.kaufman{
+  position: relative;
+  display: block;
+  overflow: hidden;
+  background-color: #1f1f1f;
+}
+.table_theme_dark{
+  display: flex;
+  flex-flow: wrap;
+  margin: auto;
+  width: 1100px;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+.section-title_theme_dark{
+  margin-top: 90px;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  width: 60%;
+}
+.section-subtitle_theme_dark{
+  display: flex;
+  width: 60%;
+  margin: auto;
+  margin-top: 20px;
+}
+.table_cell_theme_dark{
   width: 200px;
-  color: white;
+  color: rgb(255, 255, 255);
   margin-right: 0;
   margin-top: 80px;
+  z-index: 1;
+}
+.kaufman-triangle{
+  position: absolute;
+  right: -210px;
+  z-index: 0;
+  height: 877px;
+  width: 877px;
+}
+/* Стили текстов блок "kaufman"*/
+
+.section-subtitle_text_theme_dark{
+  margin: auto;
+  line-height: 34px;
+  font-size: 24px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+.section-title_text_theme_dark {
+  margin: auto;
+  line-height: 1.15;
+  font-size: 60px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+  z-index: 1;
+}
+
+/*__________________________________________________________________*/
+
+/* Раздел сайта  footer */
+
+.footer{
+display: flex;
+position: relative;
+min-height: 350px;
+background-color: #1f1f1f;
+}
+
+.footer_columns{
+position: relative;
+ display: flex;
+ margin: auto;
+ width: 90%;
+ margin-top: 60px;
+ margin-bottom: 40px;
+}
+
+.footer_columns_content_copyright{
+  flex-basis: 711px;
+}
+
+.footer_author{
+  position: absolute;
+  bottom: 18px;
+  margin-top: 18px;
+}
+
+.footer_author_text{
+  line-height: 25px;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+}
+
+.footer_columns_content_info{
+  position: absolute;
+  right: 30%;
+}
+.footer_columns_content_social{
+  position: absolute;
+  right: 0;
+}
+
+.logo_place_footer{
+  display: flex;
+  align-items: flex-start;
+  width: 183px;
+  height: 32px;
+}
+
+.footer_column-heading{
+  position:  relative;
+  margin-bottom: 20px;
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: bold;
+  color: rgb(255, 255, 255);
+}
+
+.footer_column-link{
+  line-height: 30px;
+  font-size: 18px;
+  font-weight: normal;
+  color: rgb(255, 255, 255);
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.footer_column-links{
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 16px;
+}
+
+.image-social{
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
 }

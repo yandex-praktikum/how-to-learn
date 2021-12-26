@@ -76,3 +76,42 @@ ___________________________
 Наставники
 Соцсети
 
+.feynman_title {
+  display: flex;
+  position: relative;
+  width: 648px;
+  margin: auto;
+}
+
+.p_title{
+  margin: auto;
+  margin-top: 100px;
+  line-height: 1.15;
+  font-size: 120px;
+  font-weight: bold ;
+  text-align: center;
+}
+.feynman_subtitle{
+  display: flex;
+  width: 400px;
+  margin: auto;
+}
+.feynman_subtitle_text{
+  margin: auto;
+  margin-top: 70px;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal ;
+}
+.feynman_link{
+  position: absolute; 
+  right: 48px;
+ 
+}
+
+.link_text{
+  text-decoration: none;
+  line-height: 51px;
+  font-size: 36px;
+  font-weight: normal ;
+}
