@@ -1,3 +1,7 @@
+div {
+  border: 1px solid red;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -13,7 +17,28 @@
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
+  display: block;
   /* выше установили ограничения для секции */
+}
+
+.logo {
+  width: 183px;
+  height: 32px;
+  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
+  margin: 30px 64px;
+}
+
+.flex-row {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0px;
+  margin: 0px
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
