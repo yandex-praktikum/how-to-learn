@@ -2,6 +2,12 @@ div {
   border: 1px solid red;
 }
 
+img {
+  width: 765px;
+  height: 608px;
+  z-index: 3;
+}
+
 .page {
   min-width: 1100px;
   /* мы ещё не умеем делать мобильную версию сайта, */
@@ -17,7 +23,7 @@ div {
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
-  display: block;
+  position: relative;
   /* выше установили ограничения для секции */
 }
 
@@ -29,16 +35,58 @@ div {
   background-repeat: no-repeat;
   background-position: center;
   align-self: center;
-  margin: 30px 64px;
+  z-index: 4;
 }
 
-.flex-row {
+.logo_position {
+  position: absolute;
+  top: 30px;
+  left: 64px;
+}
+
+.title {
+  width: 730px;
+  font-size: 102px;
+  font-style: bold;
+  line-height: 96px;
+  }
+
+.title_position {
+  margin: auto 64px;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  list-style: none;
-  padding: 0px;
-  margin: 0px
+  flex-direction: column;
+  align-content: center;
+  }
+
+  .subtitle {
+    width: 388px;
+    font-size: 18px;
+    font-style: bold;
+    line-height: 25px;
+    }
+
+  .subtitle_position {
+    margin-left: 64px;
+    margin-top: 600px;
+    position: absolute;
+    z-index: 1;
+    }
+
+.main-illustration {
+  width: 636px;
+  height: 557px;
+  background-color: #2f80ed;
+  margin-top: 64px;
+  position: absolute;
+  z-index: 2;
+}
+
+
+.square-pic {
+  width: 765px;
+  height: 608px;
+
+  z-index: 3;
 }
 
 /* ниже мы привели пример двух селекторов, чтобы вы вспомнили запись элемента */
