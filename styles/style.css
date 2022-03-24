@@ -6,12 +6,6 @@ body {
   margin: 0;
 }
 
-img {
-  width: 765px;
-  height: 608px;
-  z-index: 3;
-}
-
 a:link {
   color: #2f80ed;
 }
@@ -39,7 +33,7 @@ a:link {
 .logo {
   width: 183px;
   height: 32px;
-  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+  background-image: url(../images/logo_place_header.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -94,6 +88,11 @@ a:link {
 .square_pic {
   width: 765px;
   height: 608px;
+  background-image: url(../images/header-image.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  align-self: center;
   position: absolute;
   right: 0;
   bottom: 0;
@@ -277,20 +276,20 @@ a:link {
   background-image: url(../images/kaufman-triangle.svg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: contain;
   z-index: 0;
 }
 
 .kaufman_section_title {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: center;
+  position: relative;
   width: 60%;
   margin: auto auto 20px;
   font-size: 60px;
   line-height: 1.15;
   font-weight: bold;
+  text-align: center;
   padding-bottom: 20px;
+  z-index: 6;
 }
 
 .kaufman_section_subtitle {
@@ -344,32 +343,113 @@ a:link {
 
 .footer {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  flex-basis: 711px;
+  justify-content: center;
   padding-top: 60px;
   padding-bottom: 40px;
   background-color: black;
   color: white;
+  flex-basis: 711px;
 }
 
 .footer-columns {
   width: 90%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
 }
+
+.footer-columns_position {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 711px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
 .logo-place {
   width: 183px;
   height: 35px;
-  background-image: url(https://pictures.s3.yandex.net/logo_black.png);
+  background-image: url(../images/logo_place_footer.svg);
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
-  background-color: #ffffff40;
-  align-self: center;
+  z-index: 1;
 }
 
-.logo-place_footer {
-  top: 0;
-  left: 0;
+.footer-author {
+  font-size: 18px;
+  line-height: 25px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.footer-author_position {
+  margin-bottom: 18px;
+  margin-top: 18px;
+}
+
+.column_content_info {
+display: flex;
+flex-direction: column;
+}
+
+.column-heading {
+  padding-bottom: 20px;
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+}
+
+.column-links {
+  font-size: 18px;
+  line-height: 30px;
+  font-weight: normal;
+  text-align: left;
+  padding-bottom: 16px;
+}
+
+.column-links_position {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+}
+
+.column_content_social {
+  display: flex;
+  flex-direction: column;
+  }
+
+.social-icon_Facebook {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/facebook_color_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-icon_vk {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/vk_color_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.social-icon_Instagram {
+  width: 16px;
+  height: 16px;
+  margin-right: 10px;
+  background-image: url(../images/vk_color_white.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
