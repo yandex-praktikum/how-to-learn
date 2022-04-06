@@ -12,6 +12,8 @@
 
 .header {
   display: flex;
+  justify-content: center;
+  flex-direction: column;
   height: 100vh;
   min-height: 600px;
   max-height: 756px;
@@ -42,10 +44,8 @@
   line-height: 96px;
   font-weight: bold;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  margin-left: 64px;
+  margin: 0 0 0 64px;
   z-index: 3;
 }
 
@@ -56,6 +56,7 @@
   position: absolute;
   left: 64px;
   bottom: 30px;
+  margin: 0;
   z-index: 2;
 }
 
@@ -92,18 +93,13 @@
   display: flex;
   flex-direction: row;
   margin-top: 100px;
-
-  /* Добавленные и измененные стили */
-  /* padding: 0 20%; */
-  padding: 0 15%; /* может быть все же 15 % - да, согласен, спасибо! */
-  box-sizing: border-box;
-  width: 100%;
+  justify-content: center;
 }
 
 .two-columns {
   display: flex;
   width: 80%;
-  margin: 0px;
+  justify-content: space-between;
 }
 
 .two-columns__brief {
@@ -111,7 +107,7 @@
   font-size: 18px;
   line-height: 1.2;
   color: #2f80ed;
-  font-weight: bold;
+  font-weight: normal;
   margin: 0px;
 }
 
@@ -173,6 +169,7 @@
   flex-wrap: wrap;
   width: 1100px;
   margin: 0 auto 100px;
+  padding-left: 0px;
 }
 
 .table__cell {
@@ -203,7 +200,6 @@
   min-height: 890px;
   position: relative;
   display: flex;
-  margin-top: 100px;
   background-color: #f2f2f2;
   flex-direction: column;
   align-items: center;
@@ -255,11 +251,10 @@
 .kaufman {
   background-color: #1f1f1f;
   color: white;
-
-  /*  Добавленные стили */
   width: 100%;
   position: relative;
   overflow: hidden;
+  padding-bottom: 90px;
 }
 
 .kaufman__triangle {
@@ -304,7 +299,6 @@
   display: flex;
   flex-direction: column;
   width: 200px;
-  margin-top: 80px;
   z-index: 1;
 }
 
@@ -334,6 +328,7 @@
   background-color: #1f1f1f;
   color: white;
   flex-basis: 711px;
+  box-sizing: border-box;
 }
 
 .footer__columns {
