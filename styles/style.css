@@ -1,3 +1,5 @@
+/*Спасибо за терпение и обучение!*/
+
 .page {
   width: 100%;
   min-width: 1100px;
@@ -379,7 +381,7 @@
   margin: 0 0 20px;
   font-size: 18px;
   line-height: 30px;
-  font-weight: normal;
+  font-weight: bold;
   text-align: left;
 }
 
