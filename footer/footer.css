@@ -7,17 +7,16 @@
 @import url(../footer/__column/_content/_info/footer__column_content_info.css);
 @import url(../footer/__column/_content/_social/footer__column_content_social.css);
 @import url(../footer/__social/footer__social-icon.css);
-@import url(../footer/_columns/footer__columns.css);
 
 .footer {
-    min-height: 350px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    padding-top: 60px;
-    padding-bottom: 40px;
-    background-color: #1f1f1f;
-    color: white;
-    flex-basis: 711px;
-    box-sizing: border-box;
-  }
+  min-height: 350px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-top: 60px;
+  padding-bottom: 40px;
+  background-color: #1f1f1f;
+  color: white;
+  flex-basis: 711px;
+  box-sizing: border-box;
+}

@@ -1,7 +1,6 @@
 @import url(../feynman/__link/feynman__link.css);
 @import url(../feynman/__pic/feynman__pic.css);
 @import url(../feynman/__subtitle/feynman__subtitle.css);
-@import url(../feynman/__title/feynman__title.css);
 
 .feynman {
   min-height: 890px;
