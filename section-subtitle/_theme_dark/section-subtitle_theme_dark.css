@@ -1,0 +1,8 @@
+.section-subtitle_theme_dark {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 60%;
+    margin: auto;
+  }

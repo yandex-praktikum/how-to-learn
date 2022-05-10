@@ -1,0 +1,10 @@
+.resource__link {
+    display: flex;
+    justify-content: center;
+    width: 270px;
+    height: 38px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+    
+}

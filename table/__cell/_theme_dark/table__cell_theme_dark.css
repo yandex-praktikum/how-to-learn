@@ -1,0 +1,6 @@
+.table__cell_theme_dark {
+    display: flex;
+    flex-direction: column;
+    width: 200px;
+    z-index: 1;
+  }
