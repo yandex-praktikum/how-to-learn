@@ -1,9 +1,7 @@
 .two-columns {
     display: flex;
     width: 80%;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: center;
-    margin: auto;
-    max-height: 800px;
-    overflow: hidden;    
+    margin: auto; 
 }
