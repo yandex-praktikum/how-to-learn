@@ -40,7 +40,7 @@ h1, h2, h3, h4, h5, h6{
 
 .header__title{
   /*display: flex;*/
-  margin: auto;
+  margin: auto 0;
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
@@ -58,6 +58,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: normal;
   line-height: 25px;
   z-index: 3;
+  margin: 0;
 }
 
 .header__link{
@@ -88,8 +89,7 @@ h1, h2, h3, h4, h5, h6{
 
 /*текстовый блок*/
 .discription{
-  margin: auto;
-  margin-top: 100px;
+  margin: 100px auto;
   width: 80%;
   position: relative;
   display: flex;
@@ -99,12 +99,11 @@ h1, h2, h3, h4, h5, h6{
 .discription__two-columns__title{
   width: 175px;
   position: absolute;
-  left: 0;
-  top: 0;
   line-height: 1.2;
   font-size: 18px;
   color: #2f80ed;
   font-weight: normal;
+  margin: 0;
 }
 
 .discription__two-columns{
@@ -114,6 +113,7 @@ h1, h2, h3, h4, h5, h6{
   list-style: none;
   display: flex;
   justify-content: space-between;
+  margin: 0;
 }
 
 .discription__two-columns_paragraph{
@@ -122,11 +122,11 @@ h1, h2, h3, h4, h5, h6{
   line-height: 34px;
   font-size: 24px;
   font-weight: normal;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .discription__two-columns_paragraph:last-of-type{
-  margin-bottom: 0;
+  padding-bottom: 0;
 }
 
 .two-columns_paragraph_span-accent{
@@ -141,11 +141,13 @@ h1, h2, h3, h4, h5, h6{
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin: 0;
+  background-color: #2f80ed;
+  padding: 100px 0;
 }
 
 .digits__section-title{
   width: 60%;
-  margin-top: 100px;
   text-align: center;
   line-height: 1.15;
   font-size: 60px;
@@ -169,7 +171,6 @@ h1, h2, h3, h4, h5, h6{
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-  margin-bottom: 100px;
 }
 
 .digits__table_cell{
@@ -204,16 +205,18 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.15;
   font-size: 120px;
   font-weight: 600;
-  margin-top: 100px;
+  padding-top: 100px;
   z-index: 1;
+  margin: 0;
 }
 
 .feynman__subtitle{
   line-height: 51px;
   font-size: 36px;
   font-weight: normal;
-  margin-top: 70px;
+  padding-top: 70px;
   z-index: 1;
+  margin: 0;
 }
 
 .feynman__link{
@@ -244,6 +247,7 @@ h1, h2, h3, h4, h5, h6{
   background-color: #1f1f1f;
   overflow: hidden;
   position: relative;
+  padding-bottom: 90px;
 }
 
 .section-title_theme_dark{
@@ -255,6 +259,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 600;
   color: white;
   z-index: 1;
+  margin: 0;
 }
 
 .section-subtitle_theme_dark{
@@ -266,12 +271,13 @@ h1, h2, h3, h4, h5, h6{
   font-weight: normal;
   color: white;
   z-index: 1;
+  margin: 0;
 }
 
 .table_theme_dark{
   display: flex;
   width: 1100px;
-  margin: auto;
+  margin: 0 auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -297,7 +303,7 @@ h1, h2, h3, h4, h5, h6{
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  margin-top: 20px;
+  padding-top: 20px;
 }
 
 .kaufman-triangle{
@@ -314,8 +320,7 @@ h1, h2, h3, h4, h5, h6{
   background-color: #1f1f1f;
   color: white;
   display: flex;
-  margin: auto;
-  border: 1px solid #f2f2f2;
+  margin: 0 auto;
   justify-content: center;
 }
 
@@ -323,64 +328,66 @@ h1, h2, h3, h4, h5, h6{
   width: 90%;
   margin-top: 60px;
   margin-bottom: 40px;
-  border: 1px solid #f2f2f2;
   display: flex;
-  position: relative;
   justify-content: space-between;
 }
 
 .footer__column_content_copyright{
-  border: 1px solid #f2f2f2;
   flex-basis: 711px;
   display: flex;
-  position: relative;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .logo__place_footer{
-  border: 1px solid #f2f2f2;
-  position: absolute;
+  width: 228px;
 }
 
 .footer__author{
   line-height: 25px;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid #f2f2f2;
-  position: absolute;
-  bottom: 18px;
+  margin-bottom: 18px;
 }
 
 .footer__column_content_info{
-  border: 1px solid #f2f2f2;
-  display: grid;
-  row-gap: 20px;
+  display: flex;
+  gap: 20px 0;
+  flex-direction: column;
 }
 
 .footer__column-heading{
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
-  border: 1px solid #2f80ed;
 }
 
 .footer__column-links{
-  border: 1px solid #f2f2f2;
   list-style: none;
+  margin: 0;
 }
 
 .footer__column-link{
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-  border: 1px solid #f2f2f2;
+}
+
+.link-footer{
+  text-decoration: none;
+  color:  #c3c3c3;
+  display: flex;
+  align-items: center;
 }
 
 .footer__column_content_social{
-  border: 1px solid #f2f2f2;
+  display: flex;
+  gap: 20px 0;
+  flex-direction: column;
 }
 
 .footer__social-icon{
-  border: 1px solid #f2f2f2;
   height: 16px;
   width: 16px;
+  padding-right: 10px;
 }
