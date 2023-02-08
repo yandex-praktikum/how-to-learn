@@ -375,7 +375,6 @@ h1, h2, h3, h4, h5, h6{
 
 .link-footer{
   text-decoration: none;
-  color:  #c3c3c3;
   display: flex;
   align-items: center;
 }
