@@ -29,7 +29,7 @@ h1, h2, h3, h4, h5, h6{
   /* выше установили ограничения для секции */
 }
 
-.logo_place_header{
+.header__logo_place{
   position: absolute;
   top: 30px;
   left: 64px;
@@ -88,7 +88,7 @@ h1, h2, h3, h4, h5, h6{
 }
 
 /*текстовый блок*/
-.discription{
+.two-columns{
   margin: 100px auto;
   width: 80%;
   background-color: white;
@@ -100,7 +100,7 @@ h1, h2, h3, h4, h5, h6{
   /*border: 1px solid #2f80ed;*/
 }
 
-.discription__two-columns__title{
+.two-columns__brief{
   width: 175px;
   /*position: absolute;*/
   line-height: 1.2;
@@ -113,7 +113,7 @@ h1, h2, h3, h4, h5, h6{
   /*border: 1px solid #2f80ed;*/
 }
 
-.discription__two-columns{
+.two-columns__main-text{
   flex-direction: column;
   min-width: 784px;
   width: 80%;
@@ -126,7 +126,7 @@ h1, h2, h3, h4, h5, h6{
   /*border: 1px solid #2f80ed;*/
 }
 
-.discription__two-columns_paragraph{
+.two-columns__paragraph{
   /*width: 80%;
   /*min-width: 784px;*/
   line-height: 34px;
@@ -136,11 +136,11 @@ h1, h2, h3, h4, h5, h6{
   /*border: 1px solid #2f80ed;*/
 }
 
-.discription__two-columns_paragraph:last-of-type{
+.two-columns__paragraph:last-of-type{
   padding-bottom: 0;
 }
 
-.two-columns_paragraph_span-accent{
+.two-columns__span-accent{
   line-height: 34px;
   font-size: 24px;
   font-weight: 600;
@@ -157,7 +157,7 @@ h1, h2, h3, h4, h5, h6{
   padding: 100px 0;
 }
 
-.digits__section-title{
+.section-title{
   width: 60%;
   text-align: center;
   line-height: 1.15;
@@ -165,7 +165,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: 600;
 }
 
-.digits__section-subtitle{
+.section-subtitle{
   width: 60%;
   margin-top: 20px;
   text-align: center;
@@ -174,7 +174,7 @@ h1, h2, h3, h4, h5, h6{
   font-weight: normal;
 }
 
-.digits__table{
+.table{
   display: flex;
   width: 1100px;
   margin: auto;
@@ -184,7 +184,7 @@ h1, h2, h3, h4, h5, h6{
   list-style: none;
 }
 
-.digits__table_cell{
+.table__cell{
   width: 250px;
   margin-top: 60px;
 }
@@ -318,7 +318,7 @@ h1, h2, h3, h4, h5, h6{
   padding-top: 20px;
 }
 
-.kaufman-triangle{
+.kaufman__triangle{
   height: 877px;
   width: 877px;
   position: absolute;
@@ -383,13 +383,10 @@ h1, h2, h3, h4, h5, h6{
   line-height: 30px;
   font-size: 18px;
   font-weight: normal;
-}
-
-.link-footer{
+  color: white;
   text-decoration: none;
   display: flex;
   align-items: center;
-  color: white;
 }
 
 .footer__column_content_social{
