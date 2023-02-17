@@ -23,7 +23,7 @@
 }
 
 .logo{
-  height: 32px;
+  min-height: 32px;
   width: 228px;
 }
 
@@ -42,7 +42,7 @@
   font-size: 102px;
   font-weight: 600;
   line-height: 96px;
-  width: 730px;
+  max-width: 730px;
   margin-left: 64px;
   z-index: 3;
 }
@@ -51,7 +51,8 @@
   position: absolute;
   bottom: 30px;
   left: 64px;
-  width: 388px;
+  width: 100%;
+  max-width: 388px;
   font-size: 18px;
   font-weight: normal;
   line-height: 25px;
@@ -106,7 +107,7 @@
 }
 
 .two-columns__brief{
-  width: 175px;
+  max-width: 175px;
   /*position: absolute;*/
   line-height: 1.2;
   font-size: 18px;
@@ -164,6 +165,7 @@
 }
 
 .section-title{
+  margin: 0;
   width: 60%;
   text-align: center;
   line-height: 1.15;
@@ -172,6 +174,7 @@
 }
 
 .section-subtitle{
+  margin: 0;
   width: 60%;
   margin-top: 20px;
   text-align: center;
@@ -182,18 +185,23 @@
 }
 
 .table{
+  margin: 0;
+  padding: 0;
   display: flex;
   width: 1100px;
   margin: auto;
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
-  list-style: none;
+  list-style-type: none;
   /*border: 1px solid red;*/
 }
 
 .table__cell{
-  width: 250px;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  max-width: 250px;
   margin-top: 60px;
   /*border: 1px solid red;*/
 }
@@ -207,10 +215,11 @@
 }
 
 .table__text{
+  margin: 0;
   line-height: 1.2;
   font-size: 18px;
   font-weight: normal;
-  /*margin-top: 20px;*/
+  margin-top: 20px;
   /*border: 1px solid red;*/
 }
 /*блок с фейнманом*/
@@ -373,7 +382,7 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 250px;
+  min-height: 250px;
   /*border: 1px solid #2f80ed;*/
 }
 
@@ -395,6 +404,7 @@
 }
 
 .footer__column-heading{
+  margin: 0;
   line-height: 30px;
   font-size: 18px;
   font-weight: 600;
