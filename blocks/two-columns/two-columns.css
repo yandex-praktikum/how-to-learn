@@ -1,0 +1,11 @@
+.two-columns{
+  margin: auto;
+  width: 80%;
+  /*background-color: white;*/
+  position: relative;
+  /*min-height: 260px;
+  /*flex-direction: column;*/
+  justify-content: space-between;
+  display: flex;
+  /*border: 1px solid #2f80ed;*/
+}
